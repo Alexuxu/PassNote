@@ -1,2 +1,49 @@
-# PassNote
-PassNote is an open-source, offline-first password management application for Android, developed with the assistance of Gemini and built with modern Android development technologies. It allows you to securely store and manage your passwords locally on your device, giving you full control over your data.
+# PassNote - 简洁、安全的安卓密码管理器
+
+PassNote 是一款由 Gemini 协助开发的开源、本地优先的安卓密码管理应用，采用现代安卓开发技术栈构建。它能让您安全地在设备本地存储和管理您的密码，让您完全掌控自己的数据。
+
+## ✨ 功能特性
+
+- **安全本地存储**: 所有数据均存储在本地的 Room 数据库中，不会上传至任何云端。
+- **完整的增删改查**: 通过简洁直观的 UI，轻松添加、查看、编辑和删除您的密码条目。
+- **强大的搜索功能**: 通过主页面的公司/服务模糊搜索，快速找到您需要的密码。
+- **智能建议**:
+  - **用户名建议**: 在添加新条目时，从下拉菜单中自动建议常用的用户名。
+  - **可定制的密码生成器**: 可配置密码长度和自定义特殊字符集，生成强大的随机密码。
+- **数据管理**:
+  - **CSV 导入/导出**: 轻松备份和恢复您的数据。应用支持导出为 `passnote.csv` 文件，并支持从包含可选 `Notes` 字段的 CSV 文件中导入。
+  - **一键清除**: 一键（带确认弹窗）清除数据库中的所有数据。
+- **个性化设置**:
+  - **动态阈值**: 自定义用户名建议出现的触发阈值。
+  - **密码规则**: 根据您的需求定制随机密码生成器（长度、自定义字符、是否启用特殊字符）。
+  - **持久化设置**: 您所有的偏好设置都会通过 Jetpack DataStore 保存在本地。
+- **现代化 UI**: 完全使用 Jetpack Compose 和 Material 3 构建，拥有简洁、现代的设计，并支持跟随系统设置自适应切换的浅色/深色主题。
+
+## 🛠️ 技术栈与架构
+
+- **UI**: 100% Jetpack Compose & Material 3。
+- **架构**: MVVM (Model-View-ViewModel)。
+- **数据持久化**:
+  - Room 用于存储结构化数据（密码）。
+  - Jetpack DataStore 用于存储用户设置。
+- **异步处理**: 使用 Kotlin Coroutines 和 Flow 处理所有后台任务和响应式数据流。
+- **导航**: 使用 Jetpack Navigation for Compose 管理屏幕间的跳转。
+- **依赖注入**: 为保持简洁，通过自定义 `Application` 类实现手动依赖注入。
+
+## 🚀 开始使用
+
+1.  克隆本仓库:
+    ```bash
+    git clone https://github.com/your-username/PassNote.git
+    ```
+2.  使用最新稳定版的 Android Studio 打开项目。
+3.  等待 Gradle 完成依赖同步。
+4.  在模拟器或物理设备（API 29+）上构建并运行。
+
+## 🤝 贡献
+
+欢迎参与贡献！如果您有任何改进的想法或发现了 bug，请随时提交 Issue 或 Pull Request。
+
+## 📄 许可证
+
+本项目基于 MIT 许可证授权 - 详情请参阅 [LICENSE](LICENSE) 文件。
