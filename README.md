@@ -46,4 +46,4 @@ PassNote 是一款由 Gemini 协助开发的开源、本地优先的安卓密码
 
 ## 📄 许可证
 
-本项目基于 MIT 许可证授权 - 详情请参阅 [LICENSE](LICENSE) 文件。
+本项目基于 Apache-2.0 许可证授权 - 详情请参阅 [LICENSE](LICENSE) 文件。
