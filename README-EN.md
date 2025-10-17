@@ -34,7 +34,7 @@ PassNote is an open-source, offline-first password management application for An
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/your-username/PassNote.git
+    git clone https://github.com/Alexuxu/PassNote.git
     ```
 2.  Open the project in the latest stable version of Android Studio.
 3.  Let Gradle sync the dependencies.

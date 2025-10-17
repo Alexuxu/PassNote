@@ -34,7 +34,7 @@ PassNote 是一款由 Gemini 协助开发的开源、本地优先的安卓密码
 
 1.  克隆本仓库:
     ```bash
-    git clone https://github.com/your-username/PassNote.git
+    git clone https://github.com/Alexuxu/PassNote.git
     ```
 2.  使用最新稳定版的 Android Studio 打开项目。
 3.  等待 Gradle 完成依赖同步。
