@@ -7,6 +7,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.AlertDialog
@@ -71,7 +73,8 @@ fun AddPasswordScreen(
         Column(
             modifier = Modifier
                 .padding(it)
-                .padding(16.dp),
+                .padding(16.dp)
+                .verticalScroll(rememberScrollState()), // Make the column scrollable
             horizontalAlignment = Alignment.CenterHorizontally // Center buttons
         ) {
             OutlinedTextField(value = service, onValueChange = { service = it }, label = { Text("公司/服务*") }, modifier = Modifier.fillMaxWidth())
